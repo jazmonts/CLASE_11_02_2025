@@ -17,3 +17,21 @@ if (cantidadFrutas[fruta]) {
 }
 
 console.log(cantidadFrutas);
+
+//Ahora el mismo ejercio pero utilizando for
+
+let fruts = ["manzana", "naranja", "banana", "manzana", "pera", "naranja", "manzana"];
+
+let quantifyFruits = {};
+
+for (let i = 0; i < fruts.length; i++) {
+    let Fruta = fruts[i];
+    
+    if (quantifyFruits[Fruta]) {
+        quantifyFruits[Fruta]++;
+    } else {
+        quantifyFruits[Fruta] = 1;
+    }
+}
+
+console.log(quantifyFruits);
